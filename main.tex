@@ -1,0 +1,239 @@
+\documentclass[12pt, a4paper, twoside]{book}
+
+% A CC0 template based on the University of Melbourne Guidelines at 
+% https://gradresearch.unimelb.edu.au/processes/preparation-of-graduate-research-theses
+
+% ==============================================================================
+% PACKAGES & GEOMETRY (Clause 3.4: A4, left & right margins of at least 3cm)
+% ==============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+
+% --- Fancy Chapters with Quotations ---
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[Lenny]{fncychap} % Chapter styles: Lenny, Glenn, Conny, Rejne, Bjarne
+\usepackage{epigraph}        % For quotes at the beginning of chapters
+
+% --- Utility Packages ---
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+
+% ==============================================================================
+% FANCYHDR SETUP
+% ==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+% Ensure logically numbered pages (Cl. 3.4d)
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ==============================================================================
+% Mathematical Macros
+% ==============================================================================
+% ...
+
+% ==============================================================================
+% THESIS METADATA (Clause 3.9) Macros
+% ==============================================================================
+\newcommand{\thesistitle}{Thesis Title}
+\newcommand{\thesisauthor}{Full Name}
+\newcommand{\orcid}{0000-0000-0000-0000}
+\newcommand{\degree}{Doctor of Philosophy}
+\newcommand{\submissionmonth}{Month}
+\newcommand{\submissionyear}{YYYY}
+\newcommand{\school}{School Name}
+
+% Advisory Committee
+\newcommand{\thesissupervisor}{Prof. Full Name}
+\newcommand{\thesiscosupervisor}{Dr. Full Name}
+\newcommand{\thesiscommitteechair}{Prof. Full Name}
+
+% Dedicate to
+\newcommand{\authordedicateto}{To my ...} % Optional
+
+\begin{document}
+\frontmatter
+\onehalfspacing
+
+% NOTE that the thesis must be presented in the following order (Clause 3.8):
+
+% ==============================================================================
+% 1. TITLE PAGE (Clause 3.8a, 3.9)
+% NOTE: The University of Melbourne logo is NOT to be used (Clause 3.6).
+% ==============================================================================
+% \input{preamble/title.tex} % title.tex:
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge \bfseries \MakeUppercase{\thesistitle}\par}
+    \vspace{1.5cm}
+
+    {\Large \textbf{\thesisauthor}\par}
+    {\normalsize ORCID: \href{https://orcid.org/\orcid}{\orcid}\par}
+    \vspace{3cm}
+
+    {\large A thesis submitted in total fulfilment of the requirements \\ for the degree of \textbf{\degree}\par}
+    \vspace{3cm}
+
+    {\large \submissionmonth\ \submissionyear\par}
+    \vspace{2cm}
+
+    {\large \school\par}
+    {\large The University of Melbourne\par}
+    \vfill
+\end{titlepage}
+
+%\input{preamble/copyright.tex} % copyright.tex
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+Copyright \textcopyright\ \the\year\ \thesisauthor \\
+All rights reserved. No part of the publication may be reproduced in any form by print, photocopy, microfilm, or any other means without written permission from the author.
+\end{center}
+\vfill
+\clearpage
+
+%\input{preamble/dedicate.tex} %optional
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\emph{\authordedicateto}
+\end{center}
+\vfill
+\clearpage
+
+% ==============================================================================
+% 2. ABSTRACT (Clause 3.8c: 300–500 words)
+% ==============================================================================
+%\input{preamble/abstract.tex}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\begin{center}
+
+\begin{Large}
+\textbf{\thesistitle}
+\end{Large}
+
+\thesisauthor \\
+Principal Supervisor: \thesiscosupervisor \\
+Co-supervisor: \thesiscosupervisor\\
+Committee Chair: \thesiscommitteechair
+\end{center}
+\hrule
+
+\begin{center} \textbf{Abstract} \end{center}
+\vspace{-0.15in}
+
+Abstract of the thesis goes here.
+
+% ==============================================================================
+% 3. DECLARATION PAGE (Clause 3.8d, 3.10)
+% ==============================================================================
+%\input{preamble/declaration.tex}
+\chapter*{Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+This is to certify that:
+\begin{enumerate}
+    \item[i.] the thesis comprises only my original work towards the PhD except where indicated in the preface,
+    \item[ii.] due acknowledgement has been made in the text to all other material used,
+    \item[iii.] the thesis is fewer than the maximum word limit in length, exclusive of tables, maps, bibliographies and appendices.
+\end{enumerate}
+\vspace{1.5cm}
+
+% NOTE: The thesis must not contain signatures (Clause 3.7).
+\noindent \textbf{\thesisauthor}\\
+\submissionmonth\ \submissionyear
+\newpage
+
+% ==============================================================================
+% 4. PREFACE (Clause 3.8e, 3.11)
+% Detail contributions to co-authored publications, prior work, use of
+% generative  AI tools, and third-party editing assistance here, as strictly
+% required by clause 3.11.
+% ==============================================================================
+%\input{preamble/preface.tex}
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+This thesis research has been carried out at the \school, University of Melbourne, Australia. 
+The main contributions of the thesis are discussed in Chapters ... and are based on the following publications.
+
+\begin{itemize}
+    \item Paper 1 (published)
+    \item Paper 2 (submitted)
+    \item ...
+\end{itemize}
+
+\newpage
+
+% ==============================================================================
+% 5. ACKNOWLEDGEMENT OF FUNDING (Clause 3.8f)
+% ==============================================================================
+%\input{preamble/funding.tex}
+\chapter*{Funding Acknowledgement}
+\addcontentsline{toc}{chapter}{Funding Acknowledgement}
+% Required wording if you are an RTP recipient:
+This research was supported by the Commonwealth through an Australian Government Research Training Program Scholarship [DOI: doi.org/10.82133/C42F-K220].
+
+% [Include other grant identification numbers or funding sources here.]
+
+% ==============================================================================
+% 6. OTHER ACKNOWLEDGEMENTS (Clause 3.8g)
+% ==============================================================================
+%\input{preamble/acknowledgements.tex}
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+I'm very grateful to ...
+
+% ==============================================================================
+% 7. TABLE OF CONTENTS (Clause 3.8h)
+% ==============================================================================
+\tableofcontents
+
+% ==============================================================================
+% 8. LIST OF TABLES/FIGURES (Clause 3.8i - Optional)
+% ==============================================================================
+\listoffigures
+\listoftables
+
+% ==============================================================================
+% 9. CORE THESIS CONTENT (Clause 3.8k)
+% ==============================================================================
+\mainmatter
+
+%\input{chapters/chapter-1.tex} % Chapter 1
+\chapter{Introduction}
+\epigraph{This is a quotation at the beginning of the chapter.}{--- Famous Author}
+
+The thesis ...
+
+% ==============================================================================
+% 10. BIBLIOGRAPHY (Clause 3.8l)
+% ==============================================================================
+
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain} % change the biblatex styles.
+%\bibliography{references} % add references.bib
+
+% ==============================================================================
+% 11. APPENDICES (Clause 3.8m)
+% ==============================================================================
+\appendix
+
+%\input{appendices/appendix-A.tex}
+\chapter{First Appendix}
+
+This appendix ...
+
+\backmatter
+\end{document}
