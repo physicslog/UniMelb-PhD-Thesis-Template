@@ -32,7 +32,7 @@ We recommend the following directory layout:
 ├── references.bib
 ├── figures
 │   ├── fig1.pdf
-│   └── fig2.pdf
+│   └── ...
 ├── preamble/
 │   ├── title.tex
 │   ├── copyright.tex
@@ -44,9 +44,10 @@ We recommend the following directory layout:
 │   └── acknowledgement.tex
 ├── chapter/
 │   ├── chapter1.tex
-│   └── chapter2.tex
+│   └── ...
 └── appendix/
-    └── appendixA.tex
+    ├── appendixA.tex
+    └── ...
 ```
 In the `main.tex`, those files can be inserted as follows:
 ```tex
