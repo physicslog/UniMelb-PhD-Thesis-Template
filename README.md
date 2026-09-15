@@ -1,14 +1,14 @@
-# University of Melbourne PhD Thesis LaTeX Template
+# University of Melbourne PhD Thesis $LaTeX$ Template
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-A clean, standalone LaTeX template based on the standard `book` class, specifically tailored for PhD theses with [the guidelines provided by the University of Melbourne](https://gradresearch.unimelb.edu.au/processes/preparation-of-graduate-research-theses).
+A clean, standalone $LaTeX$ template based on the standard `book` class, specifically tailored for PhD theses with [the guidelines provided by the University of Melbourne](https://gradresearch.unimelb.edu.au/processes/preparation-of-graduate-research-theses).
 
 **Note on Maintenance and Authorship:** This repository exists to preserve, actively maintain, and share this CC0-licensed template for the broader academic community. The current maintainer claims no original authorship of the baseline code, but aims to ensure this resource remains accessible, functional, and up-to-date for future UniMelb graduate researchers. 
 
 ## 👀 Preview
 
-You can view the compiled PDF of this thesis template directly in your browser without installing LaTeX locally:
+You can view the compiled PDF of this thesis template directly in your browser without installing $LaTeX$ locally:
 
 [📄 **View the compiled PDF**](https://latexonline.cc/compile?git=https://github.com/physicslog/UniMelb-PhD-Thesis-Template&target=main.tex)
 
