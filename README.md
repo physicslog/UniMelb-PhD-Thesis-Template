@@ -1,10 +1,20 @@
 # University of Melbourne PhD Thesis LaTeX Template
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/) [![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-479e47?logo=overleaf)](https://www.overleaf.com/docs?snip_uri=https://github.com/physicslog/UniMelb-PhD-Thesis-Template/archive/refs/heads/main.zip&main_document=main.tex)
 
 A clean, standalone LaTeX template based on the standard `book` class, specifically tailored for PhD theses with [the guidelines provided by the University of Melbourne](https://gradresearch.unimelb.edu.au/processes/preparation-of-graduate-research-theses).
 
 **Note on Maintenance and Authorship:** This repository exists to preserve, actively maintain, and share this CC0-licensed template for the broader academic community. The current maintainer claims no original authorship of the baseline code, but aims to ensure this resource remains accessible, functional, and up-to-date for future UniMelb graduate researchers. 
+
+## 👀 Preview
+
+You can view the compiled PDF of this thesis template directly in your browser without installing LaTeX locally:
+
+[📄 **View the compiled PDF**](https://latexonline.cc/compile?git=https://github.com/physicslog/UniMelb-PhD-Thesis-Template&target=main.tex)
+
+Alternatively, you can instantly open and edit this template in a private Overleaf project:
+
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-479e47?logo=overleaf)](https://www.overleaf.com/docs?snip_uri=https://github.com/physicslog/UniMelb-PhD-Thesis-Template/archive/refs/heads/main.zip&main_document=main.tex)
 
 ## 📥 Quick Download
 
