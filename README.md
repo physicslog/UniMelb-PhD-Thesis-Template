@@ -48,7 +48,7 @@ We recommend the following directory layout:
 └── appendix/
     └── appendixA.tex
 ```
-In the `main.tex`, those files can be insert as follows:
+In the `main.tex`, those files can be inserted as follows:
 ```tex
 % --- Preamble ---
 \input{preamble/title.tex}
