@@ -28,12 +28,19 @@
 % ==============================================================================
 \pagestyle{fancy}
 \fancyhf{}
+
 % Ensure logically numbered pages (Cl. 3.4d)
 \fancyhead[LE,RO]{\thepage}
 \fancyhead[RE]{\nouppercase{\leftmark}}
 \fancyhead[LO]{\nouppercase{\rightmark}}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
+
+% ==============================================================================
+% Bibliography setup
+% ==============================================================================
+\usepackage[style=numeric, sorting=nty, backend=bibtex]{biblatex}
+\addbibresource{references.bib} % add your .bib file
 
 % ==============================================================================
 % Mathematical Macros
@@ -221,11 +228,7 @@ The thesis ...
 % ==============================================================================
 % 10. BIBLIOGRAPHY (Clause 3.8l)
 % ==============================================================================
-
-\chapter*{Bibliography}
-\addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{plain} % change the biblatex styles.
-%\bibliography{references} % add references.bib
+\printbibliography[heading=bibintoc, title={Bibliography}]
 
 % ==============================================================================
 % 11. APPENDICES (Clause 3.8m)
