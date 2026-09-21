@@ -29,7 +29,7 @@
 \usepackage{amsthm}   % Enhanced theorem, lemma, and proof environments
 
 % ==============================================================================
-% FANCYHDR SETUP
+% FANCYHDR & EPIGRAPH SETUP
 % ==============================================================================
 \pagestyle{fancy}
 \fancyhf{}
@@ -40,6 +40,9 @@
 \fancyhead[LO]{\nouppercase{\rightmark}}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
+
+\let\oldepigraph\epigraph % Saves the original epigraph command
+\renewcommand{\epigraph}[2]{\oldepigraph{\textit{#1}}{-- #2}} % redefine the command
 
 % ==============================================================================
 % THESIS METADATA (Clause 3.9) Macros
