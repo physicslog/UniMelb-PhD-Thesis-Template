@@ -22,6 +22,9 @@
 % \graphicspath{{figures/}{../figures/}} % Un-comment if graphics are in the figures folder
 \usepackage{setspace} % adjust line spacing
 \usepackage[colorlinks=true,citecolor=red,linkcolor=blue,linktoc=all]{hyperref}
+%\usepackage{float}        % [Uncomment if needed] For precise placement of figures and tables
+%\usepackage{tcolorbox}    % [Uncomment if needed] For colored boxes. %install: tikzfill, pdfcol if not already installed
+%\tcbuselibrary{skins,breakable} % [Uncomment if needed] For breakable boxes and skins
 
 % --- Maths packages ---
 \usepackage{amsmath}  % Core math environments and structures
@@ -29,7 +32,7 @@
 \usepackage{amsthm}   % Enhanced theorem, lemma, and proof environments
 
 % ==============================================================================
-% FANCYHDR & EPIGRAPH SETUP
+% FANCYHDR & EPIGRAPH SETUP & TCOLORBOX
 % ==============================================================================
 \pagestyle{fancy}
 \fancyhf{}
@@ -43,6 +46,24 @@
 
 \let\oldepigraph\epigraph % Saves the original epigraph command
 \renewcommand{\epigraph}[2]{\oldepigraph{\textit{#1}}{#2}} % redefine the command
+
+% [Uncomment if needed] Summary box for chapters: light grey background with a vertical line on the left
+% \newcommand{\summary}[1]{%
+% 	\begin{tcolorbox}[
+% 		enhanced,
+% 		breakable,
+% 		colback=gray!10,
+% 		colframe=gray!10,
+% 		boxrule=0pt,
+% 		sharp corners,
+% 		left=8pt,right=8pt,top=6pt,bottom=6pt,
+% 		borderline west={2pt}{0pt}{gray!70},
+% 		before skip=8pt,after skip=8pt
+% 	]
+% 	\itshape #1
+% 	\end{tcolorbox}%
+% }
+
 
 % ==============================================================================
 % THESIS METADATA (Clause 3.9) Macros
@@ -236,7 +257,7 @@ I'm very grateful to ...
 \chapter{Introduction}
 \epigraph{This is a quotation at the beginning of the chapter.}{--- Famous Author}
 
-The thesis ...
+%summary{This contains summary ...}
 
 % ==============================================================================
 % 10. BIBLIOGRAPHY (Clause 3.8l)
